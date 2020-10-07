@@ -1,0 +1,141 @@
+<%- include('../include/enhead.ejs') %>
+<link rel="stylesheet" href="/css/page.css">
+</head>
+  <body>
+  <!-- Navigation -->
+  <%- include('../include/ennav.ejs') %>
+
+    <div class="container">
+        <div class="container py-5 mt-2">
+            <div class="row py-5 text-center">
+                <div class="col-md-12">
+                    <h1>Help us build your timetable</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center py-2">
+              <div class="col-md-10">
+                <span class="anchor" id="formLogin"></span> 
+                <!-- form card login -->
+                <div class="card card-outline-secondary">
+                  <div class="card-header">
+                    <h3 class="mb-0">LEARNING CLASS</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="container">
+                        <form action="/payment">
+                          <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="level">Class</label>
+                                    <select class="form-control" id="level">
+                                      <option value="1">A1</option>
+                                      <option value="2">A2</option>
+                                      <option value="3">B1</option>
+                                      <option value="4">B2</option>
+                                      <option value="4">C1</option>
+                                      <option value="4">C2</option>
+                                    </select>
+                                  </div>
+                                </div>
+                            <!--  col-md-6   -->
+                      
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="hour">Hours per day</label>
+                                    <select class="form-control" id="hour">
+                                      <option value="1">1H</option>
+                                      <option value="">2H</option>
+                                      <option value="3">3H</option>
+                                    </select>
+                                  </div>
+                                </div>
+                            </div>
+                            <!--  col-md-6   -->
+                        </div>
+                      
+                      
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="days"> Days per week</label>
+                                    <select class="selectpicker form-control" id="days" multiple>
+                                        <option value="1">Monday</option>
+                                        <option value="2">Tuesday</option>
+                                        <option value="3">Wednesday</option>
+                                        <option value="4">Thursday</option>
+                                        <option value="5">Friday</option>
+                                        <option value="6">Saturday</option>
+                                        <option value="7">Sunday</option>
+                                      </select>
+                                </div>
+                              </div>
+                      
+                      
+                            <!--  col-md-6   -->
+                      
+                            <div class="col-md-6">
+                      
+                              <div class="form-group">
+                                <label for="pace">learning pace</label>
+                                <select class="form-control" id="pace">
+                                    <option value="1">Normal</option>
+                                    <option value="2">Intensive</option>
+                                    
+                                  </select>
+                              </div>
+                            </div>
+                            <!--  col-md-6   -->
+                          </div>
+                          <!--  row   -->
+                          <div class="row">
+                            <div class="col-md-6">
+                              <label for="contact-preference">how do you judge your level?</label>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="level" id="level" value="1"> Beginner
+                                </label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="level" id="level" value="2" checked> Intermediate
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="contact-preference">When is the best time of day to study?</label>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="contact-preference" id="contact-preference" value="am"> Morning
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="contact-preference" id="contact-preference" value="pm" checked> Evening
+                            </label>
+                          </div>
+                            </div>
+                          </div>
+                          <!--  row   -->
+                          <button type="submit" class="btn btn-primary form-control">Submit</button>
+                        </form>
+                      </div>
+                  </div><!--/card-block-->
+                </div><!-- /form card login -->
+                <p>feel free to <a href="/contact-us">contact us</a> in case of query</p>
+              </div>
+            </div>
+    </div>
+      <script>
+          // Material Select Initialization
+          $('select').selectpicker();
+      </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+  </body>
+</html>

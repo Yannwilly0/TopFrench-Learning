@@ -1,0 +1,68 @@
+<%- include('../include/enhead.ejs') %>
+<link rel="stylesheet" href="/css/page.css">
+</head>
+  <body>
+  <!-- Navigation -->
+  <%- include('../include/ennav.ejs') %>
+
+      <div class="container py-5 mt-2">
+        <div class="row py-5 text-center">
+            <div class="col-md-12">
+                <h1>Sign Up and Start Learning!</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center py-2">
+          <div class="col-md-6">
+            <span class="anchor" id="formLogin"></span> 
+            <!-- form card login -->
+            <div class="card card-outline-secondary">
+              <div class="card-header">
+                <h3 class="mb-0">Sign Up</h3>
+              </div>
+              <div class="card-body">
+                <form autocomplete="off" class="form" id="formLogin" name="formLogin" role="form" action="/login">
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <label for="user">Username</label>
+                      <input type="text" class="form-control" id="user" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="mail">Email Address</label>
+                    <input type="email" class="form-control" id="mail" aria-describedby="emailHelp" placeholder="Email Address">
+                    <small id="emailHelp" class="form-text text-muted">Your Email address will be kept confidential.</small>
+                  </div>
+  
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="confirm">Confirmation</label>
+                      <input type="password" class="form-control" id="confirm" placeholder="Confirmation">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a href="/login" >Already have an account? Log in</a>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-success btn-lg float-right" type="submit">Create</button>
+                    </div>
+                  </div>
+  
+                </form>
+              </div><!--/card-block-->
+            </div><!-- /form card login -->
+          </div>
+        </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+  </body>
+</html>

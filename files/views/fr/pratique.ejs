@@ -1,0 +1,129 @@
+<%- include('../include/frhead.ejs') %>
+<link rel="stylesheet" href="/css/page.css">
+</head>
+  <body>
+  <!-- Navigation -->
+  <%- include('../include/frnav.ejs') %>
+
+    <div class="container">
+        <div class="container py-5 mt-2">
+            <div class="row py-5 text-center">
+                <div class="col-md-12">
+                    <h1>Aidez-nous à construire votre emploi du temps</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center py-2">
+              <div class="col-md-10">
+                <span class="anchor" id="formLogin"></span> 
+                <!-- form card login -->
+                <div class="card card-outline-secondary">
+                  <div class="card-header">
+                    <h3 class="mb-0">COURS DE PRATIQUE</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="container">
+                        <form action="/fr/paiement">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="level">Learning level</label>
+                                  <select class="form-control" id="level">
+                                    <option value="1">Débutant</option>
+                                    <option value="2">Intermédiaire</option>
+                                    <option value="3">Avancé</option>
+                                    
+                                  </select>
+                                </div>
+                              </div>
+                            <!--  col-md-6   -->
+                      
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="hour">Heures par jour</label>
+                                    <select class="form-control" id="hour">
+                                      <option value="1">1H</option>
+                                      <option value="">2H</option>
+                                      <option value="3">3H</option>
+                                    </select>
+                                  </div>
+                                </div>
+                            </div>
+                            <!--  col-md-6   -->
+                        </div>
+                      
+                      
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="days"> Jours par semaine</label>
+                                    <select class="selectpicker form-control" id="days" multiple>
+                                        <option value="1">Lundi</option>
+                                        <option value="2">Mardi</option>
+                                        <option value="3">Mercredi</option>
+                                        <option value="4">Jeudi</option>
+                                        <option value="5">Vendredi</option>
+                                        <option value="6">Samedi</option>
+                                        <option value="7">Dimanche</option>
+                                      </select>
+                                </div>
+                              </div>
+                      
+                      
+                            <!--  col-md-6   -->
+                      
+                            <div class="col-md-6">
+                      
+                              <div class="form-group">
+                                <label for="pace">Rythme d'apprentissage</label>
+                                <select class="form-control" id="pace">
+                                    <option value="1">Normal</option>
+                                    <option value="2">Intensif</option>
+                                    
+                                  </select>
+                              </div>
+                            </div>
+                            <!--  col-md-6   -->
+                          </div>
+                          <!--  row   -->
+                      
+                          <!--  row   -->
+                      
+                      
+                          <label for="contact-preference">Quel est le meilleur moment de la journée pour étudier?</label>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="contact-preference" id="contact-preference" value="am"> Le Matin
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="contact-preference" id="contact-preference" value="pm" checked> Le Soir
+                            </label>
+                          </div>
+                      
+                          
+                      
+                      
+                          <button type="submit" class="btn btn-primary form-control">Envoyer</button>
+                        </form>
+                      </div>
+                  </div><!--/card-block-->
+                </div><!-- /form card login -->
+              </div>
+            </div>
+        
+    </div>
+      <script>
+          // Material Select Initialization
+          $('select').selectpicker();
+      </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+  </body>
+</html>
